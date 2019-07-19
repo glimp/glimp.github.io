@@ -46,3 +46,6 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+
+category_dir: category/
+tag_dir: tag/
