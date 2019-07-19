@@ -1,3 +1,4 @@
+<p>
 {% for page in site.pages %}
   {% unless page.name == '404.md' %}
     {% if page.title %}
@@ -7,6 +8,8 @@
     {% endif %}
   {% endunless %}
 {% endfor %}
+</p>
+<p>
 <div>
   <div class="sidebar-nav-item">Category</div>
   <nav class="content-ul">
@@ -21,6 +24,8 @@
     {% endfor %}
   </nav>
 </div>
+</p>
+<p>
 <div>
   <div class="sidebar-nav-item">Tags</div>
   <div class="tags-cloud">
@@ -63,3 +68,4 @@
     </div>
   </div>
 </div>
+</p>
