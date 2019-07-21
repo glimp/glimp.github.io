@@ -14,7 +14,7 @@ layout: default
       <h3>
         <small>{{ post.date | date_to_string }}</small>
         <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
+          <span style='width:200;overflow:hidden;text-overflow:ellipsis'>{{ post.title }}</span>
         </a>
       </h3>
     </li>
