@@ -34,6 +34,7 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - guide
 
 # Tags
 tag_page_dir:         tag
