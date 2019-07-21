@@ -3,27 +3,23 @@ layout: default
 ---
 
 <div class='o-wrapper'>
-
   <div class='o-grid'>
     <div class='o-grid__col'>
-<ul class="posts-list">
+      <ul class="posts-list">
   
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <small>{{ post.date | date_to_string }}</small>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          <span style='width:200;overflow:hidden;text-overflow:ellipsis'>{{ post.title }}</span>
-        </a>
-      </h3>
-    </li>
-  {% endfor %}
-  
-</ul>
-
+ 
+       {% assign category = page.category | default: page.title %}
+       {% for post in site.categories[category] %}
+       <li>
+         <h3>
+           <small>{{ post.date | date_to_string }}</small>
+           <a href="{{ site.baseurl }}{{ post.url }}">
+             <span style='width:200;overflow:hidden;text-overflow:ellipsis'>{{ post.title }}</span>
+           </a>
+         </h3>
+       </li>
+       {% endfor %}
+      </ul>
     </div>
   </div>
-
 </div>
-
