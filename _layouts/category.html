@@ -6,17 +6,9 @@ layout: default
   <div class='o-grid'>
     <div class='o-grid__col'>
       <ul class="posts-list">
-  
- 
        {% assign category = page.category | default: page.title %}
        {% for post in site.categories[category] %}
-         <li>
-           <small>{{ post.date | date_to_string }}</small>
-           <br>
-           <a href="{{ site.baseurl }}{{ post.url }}">
-             {{ post.title }}
-           </a>
-         </li>
+         {% include post-card.liquid %}
        {% endfor %}
       </ul>
     </div>
